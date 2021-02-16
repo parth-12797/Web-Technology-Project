@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Slab', serif;
+}
+
+header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+nav {
+	background-color: rgb(56, 56, 56);
+}
+
+nav ul a {
+	text-decoration: none;
+}
+
+nav img {
+	display: inline-block;
+	width: 100px;
+	height: auto;
+	margin: auto 0 auto 5%;
+}
+
+nav ul {
+	position: absolute;
+	top: 20px;
+	left: 60%;
+	display: flex;
+	width: auto;
+	height: auto;
+}
+
+nav ul li {
+	list-style: none;
+	padding: 10px;
+	margin-left: 20px;
+	color: white;
+	font-weight: 400;
+}
+
+.avtivePage {
+    border-bottom: 5px solid #1034a6;
+    box-shadow: 0px 0px 5px #1034a6,
+                0px 0px 25px #1034a6,
+                0px 0px 50px #1034a6,
+                0px 0px 200px #1034a6;
+    padding-bottom: 20px;
+}
+
+.inActivePage:hover{
+    transition-duration: 0.3s;
+    border-bottom: 5px solid #a65110;
+    box-shadow: 0px 0px 5px #a65110,
+                0px 0px 25px #a65110,
+                0px 0px 50px #a65110,
+                0px 0px 200px #a65110;
+}
+
+.footer tr td {
+	max-width: 250px;
+}
+
+.logo {
+	width: 40px;
+}
+
+.footer {
+	color: black;
+	margin-top: 20px;
+	height: 70px;
+	width: 100%;
+	background: linear-gradient(white, #1034a6);
+	/* padding-top: 30px; */
+	display: flex;
+	justify-content: space-around;
+}
+
+form{
+	width: 60%;
+	margin: 10% auto 0 auto;
+	justify-items: center;
+}
+
+fieldset:nth-child(even){
+    background-color: lightblue;
+}
+fieldset:nth-child(odd){
+    background-color: lightskyblue;
+}
+
+.input_div{
+	width: 93%;
+	position: relative;
+	border: 1px solid #e6e6e6;
+	border-radius: 13px;
+	padding: 10px 30px 9px 22px;
+	margin-bottom: 20px;
+	background-color: #f7f7f7;
+}
+.label_input{
+	color: #393939;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+.submit_div {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%;
+    background-color: #212529;
+    border-radius: 20px;
+	padding-bottom: 10px;
+	color: white;
+    font-size: xx-large;
+}
+.submit_div:hover {
+	background-color: rgb(16, 166, 41);
+	cursor: pointer;
+}
