@@ -43,5 +43,26 @@ $("#pass_val").html("");
      }
   });
 
+$("#conf_pwd").keyup(function(){
+        var password = $("#pwd").val();
+        var confirmPassword = $("#conf_pwd").val();
+        if (password != confirmPassword)
+            {
+            	$("#CheckPasswordMatch").css({
+            	"color": "red",
+            });
+            $("#CheckPasswordMatch").html("Passwords does not match!");
+            }
+        else
+        {
+            $("#CheckPasswordMatch").html("Passwords match.");
+            $("#CheckPasswordMatch").css({
+            	"color": "green",
+            });
+            
+
+        }
+
+  });
 
    });
