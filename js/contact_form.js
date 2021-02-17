@@ -11,5 +11,19 @@ $("#email_val").html("");
      
      }
   });
+  
+  $("#phone").keyup(function(){
+      var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+      var phoneVal = $("#phone").val();
+  if(!phoneno.test(phoneVal)) {
+  	//alert("parth");
+    $("#phone_val").html("enter valid phone number");
+  }else{
+
+$("#phone_val").html("");
+     
+     }
+  });
+
 
    });
