@@ -25,5 +25,23 @@ $("#phone_val").html("");
      }
   });
 
+    $("#pwd").keyup(function(){
+  	if($("#pwd").val()=="")
+  	{
+  		$("#conf_pwd").val('');
+  		$("#CheckPasswordMatch").html("");
+  	}
+      var password = /^(?=.*[A-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@])(?!.*[iIoO])\S{6,12}$/;
+      var passwordval = $("#pwd").val();
+  if(!password.test(passwordval)) {
+  	//alert("parth");
+    $("#pass_val").html("Must contain at least one number and one uppercase and lowercase letter,special character and  at least 8 or more characters");
+  }
+  else{
+$("#pass_val").html("");
+     
+     }
+  });
+
 
    });
