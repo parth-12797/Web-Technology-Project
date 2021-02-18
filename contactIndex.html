@@ -73,6 +73,7 @@
             <label for="eng">English: </label>
             <input type="radio" id="Fr" name="radio">
             <label for="Fr">French: </label>
+            <input type="radio" id="other" name="radio">
             <label for="other">Other: </label>
             <input type="text" id="other" name="other" placeholder="Please Mention." maxlength="50" style="outline: none;border: none;height: 40px;background-color: #f7f7f7;
 ">
@@ -80,18 +81,23 @@
         <div class="input_div">
             <span class="label_input">EMAIL- ID *</span>
             <input class="input_email" id="email" type="text" name="name" placeholder="Enter Your email-id" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
+            <p id="email_val"  style="color: red"></p>
         </div>
         <div class="input_div">
             <span class="label_input">PHONE NUMBER *</span>
-            <input class="input" type="text" name="name" placeholder="Enter Your Phone Number" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
+            <input class="input" type="text"  id="phone" name="name" placeholder="Enter Your Phone Number" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
+          <p id="phone_val"  style="color: red"></p>
         </div>
         <div class="input_div">
             <span class="label_input">PASSWORD *</span>
-            <input class="input" type="text" name="name" placeholder="Enter Password" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
+            <input class="input" type="Password"  id="pwd" name="name" placeholder="Enter Password" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
+        <p id="pass_val"  style="color: red"></p>
         </div>
         <div class="input_div">
             <span class="label_input">CONFIRM PASSWROD *</span>
-            <input class="input" type="text" name="name" placeholder="Enter same Password" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
+            <input class="input" type="Password" id="conf_pwd" name="name" placeholder="Enter same Password" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
+        <p id="CheckPasswordMatch"  style="color: red"></p>
+        
         </div>
             
         <div class="input_div">
