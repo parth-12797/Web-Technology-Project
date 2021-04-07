@@ -7,8 +7,130 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/contact_style/contactStyle.css" type="text/css">
     <link rel="stylesheet" href="./css/style-nav.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
 <script src="./js/jquery_min.js"></script>
     <script type="text/javascript" src="./js/contact_form.js"></script>
+
+
+<style type="text/css">
+    
+    body{
+        background-color: #25274d;
+    }
+    .contact{
+        padding: 4%;
+        height: 400px;
+    }
+    .col-md-3{
+        background: #ff9b00;
+        padding: 4%;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+    .contact-info{
+        margin-top:10%;
+    }
+    .contact-info img{
+        margin-bottom: 15%;
+    }
+    .contact-info h2{
+        margin-bottom: 10%;
+    }
+    .col-md-9{
+        background: #fff;
+        padding: 3%;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+    .contact-form label{
+        font-weight:600;
+    }
+    .contact-form button{
+        background: #25274d;
+        color: #fff;
+        font-weight: 600;
+        width: 25%;
+    }
+    .contact-form button:focus{
+        box-shadow:none;
+    }
+
+    .btn-3 {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: rgba(2,126,251,1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+</style>
 
 </head>
 
@@ -16,7 +138,7 @@
     <header>
         <nav>
             <img src="./assets/images/cars.gif" alt="logo">
-            <ul>
+            <ul style=" margin-left: -237px;">
                  <a href="./index.html">
                     <li class="inActivePage">Home</li>
                 </a>
@@ -29,92 +151,69 @@
                 <a href="./SellerReviewIndex.html">
                     <li class="inActivePage">Seller Reviews</li>
                 </a>
+                <a href="./aboutus.html">
+                    <li class="inActivePage">About Us</li>
+                </a>
                 <a href="./contactIndex.html">
                     <li class="avtivePage">Contact Us</li>
+                </a>
+                <a href="./login.html">
+                    <li class="inActivePage">Account</li>
                 </a>
             </ul>
         </nav>
     </header>
 
-   <form action="./reply.html">
-            
-        <span style="display: block;width: 100%;font-family: Montserrat-Black;font-size: 39px;color: #333333;line-height: 1.2;text-align: center;padding-bottom: 59px;font-weight: bold;">Registration</span>
-        <div class="input_div">
-            <span class="label_input">FULL NAME *</span>
-            <input class="input" type="text" name="name" placeholder="Enter Your Name" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
+<form>
+<div class="container contact">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="contact-info">
+                <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+                <h2>Contact Us</h2>
+                <h4>We would love to hear from you !</h4>
+            </div>
         </div>
-        <div class="input_div">
-            <span class="label_input">ADDRESS *</span>
-            <textarea class="input" type="text" name="name" placeholder="Enter Your Address" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 100px;border: none;outline: none;"></textarea>
+        <div class="col-md-9">
+            <div class="contact-form">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="fname">First Name:</label>
+                  <div class="col-sm-10">          
+                    <input type="text" class="form-control" id="fname" required="" placeholder="Enter First Name" name="fname">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="lname">Last Name:</label>
+                  <div class="col-sm-10">          
+                    <input type="text" class="form-control" id="lname" required="" placeholder="Enter Last Name" name="lname">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="email">Email:</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="" name="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="comment">Comment:</label>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">        
+                  <div class="col-sm-offset-2 col-sm-10">
+                   <button class="custom-btn btn-3"><span>Submit</span></button>
+                  </div>
+                </div>
+            </div>
         </div>
-        <div class="input_div">
-            <span class="label_input">CITY *</span>
-            <input class="input" type="text" name="name" placeholder="Enter Your City" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
-        </div>
-        <div class="input_div">
-            <span class="label_input">STATE/PROVINCE *</span>
-            <input class="input" type="text" name="name" placeholder="Enter Your State or Province" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
-        </div>
-        <div class="input_div">
-            <span class="label_input">COUNTRY *</span>
-            <select class="input" type="text" name="name" placeholder="Enter Your Country" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
-                <option value="none">Select Country</option>
-                <option value="CA">Canada</option>
-                <option value="IND">India</option>
-                <option value="AUS">Australia</option>
-                <option value="FR">France</option>
-                <option value="IT">Italy</option>
-            </select>
-        </div>
-        <div class="input_div">
-            <span class="label_input">ZIP CODE *</span>
-            <input class="input" type="text" name="name" placeholder="Enter Your zipcode" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
-        </div>
-        <div class="input_div">
-            <span class="label_input">LANGUAGE *</span><br>
-            <input type="radio" id="eng" name="radio">
-            <label for="eng">English: </label>
-            <input type="radio" id="Fr" name="radio">
-            <label for="Fr">French: </label>
-            <input type="radio" id="other" name="radio">
-            <label for="other">Other: </label>
-            <input type="text" id="other" name="other" placeholder="Please Mention." maxlength="50" style="outline: none;border: none;height: 40px;background-color: #f7f7f7;
-">
-        </div>
-        <div class="input_div">
-            <span class="label_input">EMAIL- ID *</span>
-            <input class="input_email" id="email" type="text" name="name" placeholder="Enter Your email-id" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
-            <p id="email_val"  style="color: red"></p>
-        </div>
-        <div class="input_div">
-            <span class="label_input">PHONE NUMBER *</span>
-            <input class="input" type="text"  id="phone" name="name" placeholder="Enter Your Phone Number" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
-          <p id="phone_val"  style="color: red"></p>
-        </div>
-        <div class="input_div">
-            <span class="label_input">PASSWORD *</span>
-            <input class="input" type="Password"  id="pwd" name="name" placeholder="Enter Password" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
-        <p id="pass_val"  style="color: red"></p>
-        </div>
-        <div class="input_div">
-            <span class="label_input">CONFIRM PASSWROD *</span>
-            <input class="input" type="Password" id="conf_pwd" name="name" placeholder="Enter same Password" style="display: block;width: 100%;background: transparent;font-family: Montserrat-SemiBold;font-size: 18px;color: #555555;line-height: 1.2;padding-right: 15px;height: 40px;border: none;outline: none;">
-        <p id="CheckPasswordMatch"  style="color: red"></p>
-        
-        </div>
-            
-        <div class="input_div">
-            <input id="1" type="checkbox" name="check">
-            <label for="1">I agree to receive Information about new products.</label><br>
-            <input id="2" type="checkbox" name="check">
-            <label for="2">I agree to complay with the company rules.</label><br>
-        </div>
-        
-        <div class="submit_div">
-            Submit
-        </div>
+    </div>
+</div>
+
 </form>
-    <footer class="footer">
+  
+ <div style="margin-top: 250px;">
+     <footer class="footer">
         <table>
             <tr>
                 <td><img class="logo" src="./assets/images/icons8-google-maps.svg" alt="location"></td>
@@ -134,9 +233,11 @@
             </tr>
         </table>
     </footer>
-    <div style="background-color: #cbcbda;display: inline-block;text-align: center;width: -webkit-fill-available;color: white;">
+    <div style="background:linear-gradient(black,#1034a6);display: inline-block;text-align: center;width: -webkit-fill-available;color: white;">
         <a href="./sitemap.html">SITEMAP</a>   ||  <a href="#">POLICY</a>  ||  <a href="#">CAREER</a>
-    </div>
+    </div> 
+
+</div>
     
 
 </body>
