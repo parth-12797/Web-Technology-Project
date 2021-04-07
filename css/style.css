@@ -39,6 +39,7 @@ nav ul {
     display: flex;
     width: auto;
     height: auto;
+    margin-left: -237px;
 }
 
 nav ul li {
