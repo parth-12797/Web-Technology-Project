@@ -18,6 +18,92 @@
 	<!--Custom styles-->
 	<!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
 	<link rel="stylesheet" href="./css/login.css" type="text/css">
+
+	<script src="./js/jquery_min.js"></script>
+<!--     <script type="text/javascript" src="./js/register.js"></script> -->
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+	//hid all errors, which will only show when called below
+	$("#username_error_message").hide();
+	$("#password_error_message").hide();
+
+
+	var error_username = false;
+	var error_password = false;
+
+	
+	//Excecute when the use click out of the box "focusout"
+	$("#form_username").focusout(function() {
+
+		check_username();
+		
+	});
+
+	$("#form_password").focusout(function() {
+
+		check_password();
+		
+	});
+
+	
+
+	
+
+	function check_username() {
+	
+		var username = $("#form_username").val();
+		
+		if(!(username==='admin')) {
+			$("#username_error_message").html("enter correct username");
+			$("#username_error_message").show();
+			error_username = true;
+		} else {
+			$("#username_error_message").hide();
+		}
+	
+	}
+
+	function check_password() {
+	
+		var password = $("#form_password").val();
+		
+		if(!(password==='admin')){
+			$("#password_error_message").html("enter correct password");
+			$("#password_error_message").show();
+			error_password = true;
+		} else {
+			$("#password_error_message").hide();
+		}
+	
+	}
+
+
+
+	
+
+	$("#login_submit").submit(function() {
+											
+		error_username = false;
+		error_password = false;
+		
+											
+		check_username();
+		check_password();
+		
+		
+		if(error_username == false && error_password == false) {
+			alert("login successfully")
+			return true;
+		} else {
+
+			return false;	
+		}
+
+	});
+
+});
+</script>
 </head>
 <body>
 	 <header>
@@ -40,19 +126,23 @@
 				</div>
 			</div>
 			<div class="card-body">
-				<form action="index.html">
+				<form action="index.html" id="login_submit">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="username">
+						<input type="text" class="form-control" placeholder="username" id="form_username">
 						
 					</div>
+					<div class="alert alert-danger" id="username_error_message" style="font-size: 10px;"></div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="password">
+						<input type="password" class="form-control" placeholder="password" id="form_password">
+
+					</div>
+					<div class="alert alert-danger" id="password_error_message" style="font-size: 10px;">
 					</div>
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
